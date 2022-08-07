@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		153F6495289D1C180098AA92 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F6494289D1C180098AA92 /* TodoListView.swift */; };
+		153F6497289D230D0098AA92 /* AddNewTodo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F6496289D230D0098AA92 /* AddNewTodo.swift */; };
+		156D61FD289AB4020015E1DC /* todo WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 156D61FC289AB4020015E1DC /* todo WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		156D6202289AB4030015E1DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 156D6201289AB4030015E1DC /* Assets.xcassets */; };
+		156D6208289AB4040015E1DC /* todo WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 156D6207289AB4040015E1DC /* todo WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		156D620D289AB4040015E1DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156D620C289AB4040015E1DC /* ContentView.swift */; };
+		156D620F289AB4040015E1DC /* todoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156D620E289AB4040015E1DC /* todoApp.swift */; };
+		156D6211289AB4040015E1DC /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156D6210289AB4040015E1DC /* ComplicationController.swift */; };
+		156D6213289AB4040015E1DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 156D6212289AB4040015E1DC /* Assets.xcassets */; };
+		156D6216289AB4040015E1DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 156D6215289AB4040015E1DC /* Preview Assets.xcassets */; };
+		156D622B289AB56A0015E1DC /* doit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 156D6229289AB56A0015E1DC /* doit.xcdatamodeld */; };
+		156D622D289ABABA0015E1DC /* PersistentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156D622C289ABABA0015E1DC /* PersistentController.swift */; };
+		156D622F289ABCCF0015E1DC /* FolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156D622E289ABCCF0015E1DC /* FolderView.swift */; };
+		15D8EF9F289D0CF7001695AF /* AddNewFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D8EF9E289D0CF7001695AF /* AddNewFolder.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		156D61FE289AB4020015E1DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 156D61F2289AB4020015E1DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 156D61FB289AB4020015E1DC;
+			remoteInfo = "todo WatchKit App";
+		};
+		156D6209289AB4040015E1DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 156D61F2289AB4020015E1DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 156D6206289AB4040015E1DC;
+			remoteInfo = "todo WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		156D621D289AB4040015E1DC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				156D6208289AB4040015E1DC /* todo WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		156D6221289AB4040015E1DC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				156D61FD289AB4020015E1DC /* todo WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		153F6494289D1C180098AA92 /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
+		153F6496289D230D0098AA92 /* AddNewTodo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTodo.swift; sourceTree = "<group>"; };
+		156D61F8289AB4020015E1DC /* todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		156D61FC289AB4020015E1DC /* todo WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "todo WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		156D6201289AB4030015E1DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		156D6207289AB4040015E1DC /* todo WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "todo WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		156D620C289AB4040015E1DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		156D620E289AB4040015E1DC /* todoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoApp.swift; sourceTree = "<group>"; };
+		156D6210289AB4040015E1DC /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		156D6212289AB4040015E1DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		156D6215289AB4040015E1DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		156D6217289AB4040015E1DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		156D622A289AB56A0015E1DC /* doit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = doit.xcdatamodel; sourceTree = "<group>"; };
+		156D622C289ABABA0015E1DC /* PersistentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentController.swift; sourceTree = "<group>"; };
+		156D622E289ABCCF0015E1DC /* FolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderView.swift; sourceTree = "<group>"; };
+		15D8EF9E289D0CF7001695AF /* AddNewFolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewFolder.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		156D6204289AB4040015E1DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		156D61F1289AB4020015E1DC = {
+			isa = PBXGroup;
+			children = (
+				156D6200289AB4020015E1DC /* todo WatchKit App */,
+				156D620B289AB4040015E1DC /* todo WatchKit Extension */,
+				156D61F9289AB4020015E1DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		156D61F9289AB4020015E1DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				156D61F8289AB4020015E1DC /* todo.app */,
+				156D61FC289AB4020015E1DC /* todo WatchKit App.app */,
+				156D6207289AB4040015E1DC /* todo WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		156D6200289AB4020015E1DC /* todo WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				156D6201289AB4030015E1DC /* Assets.xcassets */,
+			);
+			path = "todo WatchKit App";
+			sourceTree = "<group>";
+		};
+		156D620B289AB4040015E1DC /* todo WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				156D6226289AB4BA0015E1DC /* DB */,
+				156D6225289AB4A50015E1DC /* Views */,
+				156D620C289AB4040015E1DC /* ContentView.swift */,
+				156D620E289AB4040015E1DC /* todoApp.swift */,
+				156D6210289AB4040015E1DC /* ComplicationController.swift */,
+				156D6212289AB4040015E1DC /* Assets.xcassets */,
+				156D6217289AB4040015E1DC /* Info.plist */,
+				156D6214289AB4040015E1DC /* Preview Content */,
+			);
+			path = "todo WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		156D6214289AB4040015E1DC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				156D6215289AB4040015E1DC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		156D6225289AB4A50015E1DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				156D6228289AB4FA0015E1DC /* FolderView */,
+				156D6227289AB4E50015E1DC /* TodosView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		156D6226289AB4BA0015E1DC /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				156D6229289AB56A0015E1DC /* doit.xcdatamodeld */,
+				156D622C289ABABA0015E1DC /* PersistentController.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		156D6227289AB4E50015E1DC /* TodosView */ = {
+			isa = PBXGroup;
+			children = (
+				153F6494289D1C180098AA92 /* TodoListView.swift */,
+				153F6496289D230D0098AA92 /* AddNewTodo.swift */,
+			);
+			path = TodosView;
+			sourceTree = "<group>";
+		};
+		156D6228289AB4FA0015E1DC /* FolderView */ = {
+			isa = PBXGroup;
+			children = (
+				156D622E289ABCCF0015E1DC /* FolderView.swift */,
+				15D8EF9E289D0CF7001695AF /* AddNewFolder.swift */,
+			);
+			path = FolderView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		156D61F7289AB4020015E1DC /* todo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 156D6222289AB4040015E1DC /* Build configuration list for PBXNativeTarget "todo" */;
+			buildPhases = (
+				156D61F6289AB4020015E1DC /* Resources */,
+				156D6221289AB4040015E1DC /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				156D61FF289AB4020015E1DC /* PBXTargetDependency */,
+			);
+			name = todo;
+			productName = todo;
+			productReference = 156D61F8289AB4020015E1DC /* todo.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		156D61FB289AB4020015E1DC /* todo WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 156D621E289AB4040015E1DC /* Build configuration list for PBXNativeTarget "todo WatchKit App" */;
+			buildPhases = (
+				156D61FA289AB4020015E1DC /* Resources */,
+				156D621D289AB4040015E1DC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				156D620A289AB4040015E1DC /* PBXTargetDependency */,
+			);
+			name = "todo WatchKit App";
+			productName = "todo WatchKit App";
+			productReference = 156D61FC289AB4020015E1DC /* todo WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		156D6206289AB4040015E1DC /* todo WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 156D621A289AB4040015E1DC /* Build configuration list for PBXNativeTarget "todo WatchKit Extension" */;
+			buildPhases = (
+				156D6203289AB4040015E1DC /* Sources */,
+				156D6204289AB4040015E1DC /* Frameworks */,
+				156D6205289AB4040015E1DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "todo WatchKit Extension";
+			productName = "todo WatchKit Extension";
+			productReference = 156D6207289AB4040015E1DC /* todo WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		156D61F2289AB4020015E1DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					156D61F7289AB4020015E1DC = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					156D61FB289AB4020015E1DC = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					156D6206289AB4040015E1DC = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 156D61F5289AB4020015E1DC /* Build configuration list for PBXProject "todo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 156D61F1289AB4020015E1DC;
+			productRefGroup = 156D61F9289AB4020015E1DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				156D61F7289AB4020015E1DC /* todo */,
+				156D61FB289AB4020015E1DC /* todo WatchKit App */,
+				156D6206289AB4040015E1DC /* todo WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		156D61F6289AB4020015E1DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		156D61FA289AB4020015E1DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				156D6202289AB4030015E1DC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		156D6205289AB4040015E1DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				156D6216289AB4040015E1DC /* Preview Assets.xcassets in Resources */,
+				156D6213289AB4040015E1DC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		156D6203289AB4040015E1DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				156D620D289AB4040015E1DC /* ContentView.swift in Sources */,
+				156D622D289ABABA0015E1DC /* PersistentController.swift in Sources */,
+				153F6497289D230D0098AA92 /* AddNewTodo.swift in Sources */,
+				153F6495289D1C180098AA92 /* TodoListView.swift in Sources */,
+				156D622F289ABCCF0015E1DC /* FolderView.swift in Sources */,
+				156D622B289AB56A0015E1DC /* doit.xcdatamodeld in Sources */,
+				15D8EF9F289D0CF7001695AF /* AddNewFolder.swift in Sources */,
+				156D620F289AB4040015E1DC /* todoApp.swift in Sources */,
+				156D6211289AB4040015E1DC /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		156D61FF289AB4020015E1DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 156D61FB289AB4020015E1DC /* todo WatchKit App */;
+			targetProxy = 156D61FE289AB4020015E1DC /* PBXContainerItemProxy */;
+		};
+		156D620A289AB4040015E1DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 156D6206289AB4040015E1DC /* todo WatchKit Extension */;
+			targetProxy = 156D6209289AB4040015E1DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		156D6218289AB4040015E1DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		156D6219289AB4040015E1DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		156D621B289AB4040015E1DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"todo WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "todo WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "todo WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.keily.todo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		156D621C289AB4040015E1DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"todo WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "todo WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "todo WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.keily.todo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		156D621F289AB4040015E1DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = todo_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "todo WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.keily.todo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		156D6220289AB4040015E1DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = todo_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "todo WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.keily.todo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		156D6223289AB4040015E1DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.keily.todo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		156D6224289AB4040015E1DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.keily.todo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		156D61F5289AB4020015E1DC /* Build configuration list for PBXProject "todo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				156D6218289AB4040015E1DC /* Debug */,
+				156D6219289AB4040015E1DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		156D621A289AB4040015E1DC /* Build configuration list for PBXNativeTarget "todo WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				156D621B289AB4040015E1DC /* Debug */,
+				156D621C289AB4040015E1DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		156D621E289AB4040015E1DC /* Build configuration list for PBXNativeTarget "todo WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				156D621F289AB4040015E1DC /* Debug */,
+				156D6220289AB4040015E1DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		156D6222289AB4040015E1DC /* Build configuration list for PBXNativeTarget "todo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				156D6223289AB4040015E1DC /* Debug */,
+				156D6224289AB4040015E1DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		156D6229289AB56A0015E1DC /* doit.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				156D622A289AB56A0015E1DC /* doit.xcdatamodel */,
+			);
+			currentVersion = 156D622A289AB56A0015E1DC /* doit.xcdatamodel */;
+			path = doit.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 156D61F2289AB4020015E1DC /* Project object */;
+}
