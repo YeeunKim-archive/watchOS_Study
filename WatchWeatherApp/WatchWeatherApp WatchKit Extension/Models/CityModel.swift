@@ -9,6 +9,6 @@ import Foundation
 
 struct CityModel: Codable {
     var city: String
-    var principalSubdivison: String
+    var principalSubdivision: String
     var countryCode: String
 }

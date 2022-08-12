@@ -35,13 +35,12 @@ final class WeatherLocationManager: NSObject, ObservableObject, CLLocationManage
     private func getCityForCoordinates(location: CLLocationCoordinate2D) {
         let url = URL(string: "https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=\(location.latitude)&longitude=\(location.longitude)&localityLanguage=en")!
         NetworkManager<CityModel>().fetch(for: url) { (result) in
-            print(result)
-//            switch result {
-//            case .failure(let err):
-//                print(err.localizedDescription)
-//            case .success(let cityData):
-//                self.cityName = "\(cityData.city), \(cityData.countryCode)"
-//            }
+            switch result {
+            case .failure(let err):
+                print(err.localizedDescription)
+            case .success(let cityData):
+                self.cityName = "\(cityData.city), \(cityData.countryCode)"
+            }
             
             
             
