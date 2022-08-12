@@ -43,7 +43,6 @@ final class NetworkManager<T: Codable> {
     }
 }
 
-
 enum NetworkError: Error {
     case badResponse
     case wrongStatusCode(code: Int)

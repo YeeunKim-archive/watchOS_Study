@@ -21,7 +21,6 @@ final class WeatherManager: ObservableObject {
             case .success(let resp):
                 self.weatherResponse = resp
             }
-             
         }
     }
 }

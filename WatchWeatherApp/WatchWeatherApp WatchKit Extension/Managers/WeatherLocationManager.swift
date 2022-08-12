@@ -10,12 +10,12 @@ import CoreLocation
 
 final class WeatherLocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     
-    @Published var cityName = "----San Francisco---"
+    @Published var cityName = "San Francisco"
     @Published var coordinate: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 37.231, longitude: -122.2322)
     
     private var locationManager: CLLocationManager
     
-    override init() {
+    override init() { // 위치정보 사용 동의
         locationManager = CLLocationManager()
         
         super.init()
@@ -41,10 +41,6 @@ final class WeatherLocationManager: NSObject, ObservableObject, CLLocationManage
             case .success(let cityData):
                 self.cityName = "\(cityData.city), \(cityData.countryCode)"
             }
-            
-            
-            
         }
     }
-    
 }
